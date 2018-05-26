@@ -15,10 +15,11 @@
         android:layout_height="60dp"
         android:layout_marginTop="16dp"
         android:text="To Be Continued"
-        app:layout_constraintLeft_toLeftOf="parent"
         app:layout_constraintRight_toRightOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintHorizontal_bias="0.498" />
+        app:layout_constraintHorizontal_bias="0.058"
+        app:layout_constraintLeft_toRightOf="@+id/seinfeld"
+        android:layout_marginLeft="8dp" />
 
     <Button
         android:id="@+id/seinfeld"
@@ -36,9 +37,42 @@
         android:layout_width="120dp"
         android:layout_height="60dp"
         android:layout_marginEnd="7dp"
-        android:layout_marginRight="30dp"
+        android:layout_marginRight="7dp"
         android:layout_marginTop="16dp"
         android:text="Ya Like Jazz?"
         app:layout_constraintRight_toRightOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
+
+    <Button
+        android:id="@+id/ah"
+        android:layout_width="120dp"
+        android:layout_height="60dp"
+        android:layout_marginLeft="19dp"
+        android:layout_marginRight="8dp"
+        android:layout_marginTop="16dp"
+        android:text="AHHHHH"
+        app:layout_constraintHorizontal_bias="0.1"
+        app:layout_constraintLeft_toRightOf="@+id/lobster"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/jazz" />
+
+    <Button
+        android:id="@+id/lobster"
+        android:layout_width="120dp"
+        android:layout_height="60dp"
+        android:layout_marginLeft="17dp"
+        android:layout_marginTop="16dp"
+        android:text="Rock Lobster"
+        app:layout_constraintLeft_toRightOf="@+id/seal"
+        app:layout_constraintTop_toBottomOf="@+id/yes" />
+
+    <Button
+        android:id="@+id/seal"
+        android:layout_width="120dp"
+        android:layout_height="60dp"
+        android:layout_marginLeft="8dp"
+        android:layout_marginTop="16dp"
+        android:text="Sax Seal"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/seinfeld" />
 </android.support.constraint.ConstraintLayout>

@@ -72,6 +72,63 @@ public class MainSoundboard extends AppCompatActivity {
             }
         });
 
+        final MediaPlayer mp3 = MediaPlayer.create(this, R.raw.sax_seal);
+
+        Button saxSeal = (Button) findViewById(R.id.seal);
+        saxSeal.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                System.out.println(mp3.isPlaying());
+                if (mp3.isPlaying()) {
+                    System.out.println("stop");
+                    mp3.pause();
+                    mp3.seekTo(0);
+                }
+                else {
+                    mp3.start();
+                    System.out.println("play");
+                }
+            }
+        });
+
+        final MediaPlayer mp4 = MediaPlayer.create(this, R.raw.rock_lobster);
+
+        Button rockLobster = (Button) findViewById(R.id.lobster);
+        rockLobster.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                System.out.println(mp4.isPlaying());
+                if (mp4.isPlaying()) {
+                    System.out.println("stop");
+                    mp4.pause();
+                    mp4.seekTo(0);
+                }
+                else {
+                    mp4.start();
+                    System.out.println("play");
+                }
+            }
+        });
+
+        final MediaPlayer mp5 = MediaPlayer.create(this, R.raw.ahhhhh);
+
+        Button ahhhhh = (Button) findViewById(R.id.ah);
+        ahhhhh.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                System.out.println(mp5.isPlaying());
+                if (mp5.isPlaying()) {
+                    System.out.println("stop");
+                    mp5.pause();
+                    mp5.seekTo(0);
+                }
+                else {
+                    mp5.start();
+                    System.out.println("play");
+                }
+            }
+        });
+
     }
 }
 
