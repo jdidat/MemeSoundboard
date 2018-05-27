@@ -129,6 +129,120 @@ public class MainSoundboard extends AppCompatActivity {
             }
         });
 
+        final MediaPlayer mp6 = MediaPlayer.create(this, R.raw.my_swamp);
+
+        Button swamp = (Button) findViewById(R.id.swamp);
+        swamp.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                System.out.println(mp6.isPlaying());
+                if (mp6.isPlaying()) {
+                    System.out.println("stop");
+                    mp6.pause();
+                    mp6.seekTo(0);
+                }
+                else {
+                    mp6.start();
+                    System.out.println("play");
+                }
+            }
+        });
+
+        final MediaPlayer mp7 = MediaPlayer.create(this, R.raw.all_star);
+
+        Button allStar = (Button) findViewById(R.id.all_star);
+        allStar.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                System.out.println(mp7.isPlaying());
+                if (mp7.isPlaying()) {
+                    System.out.println("stop");
+                    mp7.pause();
+                    mp7.seekTo(0);
+                }
+                else {
+                    mp7.start();
+                    System.out.println("play");
+                }
+            }
+        });
+
+        final MediaPlayer mp8 = MediaPlayer.create(this, R.raw.epic_sax_guy);
+
+        Button saxGuy = (Button) findViewById(R.id.sax_guy);
+        saxGuy.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                System.out.println(mp8.isPlaying());
+                if (mp8.isPlaying()) {
+                    System.out.println("stop");
+                    mp8.pause();
+                    mp8.seekTo(0);
+                }
+                else {
+                    mp8.start();
+                    System.out.println("play");
+                }
+            }
+        });
+
+        final MediaPlayer mp9 = MediaPlayer.create(this, R.raw.run);
+
+        Button run = (Button) findViewById(R.id.run);
+        run.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                System.out.println(mp9.isPlaying());
+                if (mp9.isPlaying()) {
+                    System.out.println("stop");
+                    mp9.pause();
+                    mp9.seekTo(0);
+                }
+                else {
+                    mp9.start();
+                    System.out.println("play");
+                }
+            }
+        });
+
+        final MediaPlayer mp10 = MediaPlayer.create(this, R.raw.wake_me_up);
+
+        Button wake = (Button) findViewById(R.id.wake);
+        wake.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                System.out.println(mp10.isPlaying());
+                if (mp10.isPlaying()) {
+                    System.out.println("stop");
+                    mp10.pause();
+                    mp10.seekTo(0);
+                }
+                else {
+                    mp10.start();
+                    System.out.println("play");
+                }
+            }
+        });
+
+        final MediaPlayer mp11 = MediaPlayer.create(this, R.raw.crawling_in_my_skin);
+
+        Button crawling = (Button) findViewById(R.id.crawling);
+        crawling.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                System.out.println(mp11.isPlaying());
+                if (mp11.isPlaying()) {
+                    System.out.println("stop");
+                    mp11.pause();
+                    mp11.seekTo(0);
+                }
+                else {
+                    mp11.start();
+                    System.out.println("play");
+                }
+            }
+        });
+
     }
 }
 

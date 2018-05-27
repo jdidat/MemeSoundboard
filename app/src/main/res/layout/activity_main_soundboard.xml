@@ -13,66 +13,138 @@
         android:id="@+id/yes"
         android:layout_width="120dp"
         android:layout_height="60dp"
-        android:layout_marginTop="16dp"
         android:text="To Be Continued"
-        app:layout_constraintRight_toRightOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintHorizontal_bias="0.058"
+        android:layout_marginTop="8dp"
         app:layout_constraintLeft_toRightOf="@+id/seinfeld"
-        android:layout_marginLeft="8dp" />
+        android:layout_marginLeft="17dp" />
 
     <Button
         android:id="@+id/seinfeld"
         android:layout_width="120dp"
         android:layout_height="60dp"
-        android:layout_marginLeft="6dp"
         android:layout_marginStart="8dp"
-        android:layout_marginTop="16dp"
         android:text="Seinfeld Bass"
-        app:layout_constraintLeft_toLeftOf="parent"
-        app:layout_constraintTop_toTopOf="parent" />
+        app:layout_constraintTop_toTopOf="parent"
+        android:layout_marginTop="8dp"
+        android:layout_marginLeft="8dp"
+        app:layout_constraintLeft_toLeftOf="parent" />
 
     <Button
         android:id="@+id/jazz"
         android:layout_width="120dp"
         android:layout_height="60dp"
         android:layout_marginEnd="7dp"
-        android:layout_marginRight="7dp"
-        android:layout_marginTop="16dp"
         android:text="Ya Like Jazz?"
+        app:layout_constraintTop_toTopOf="parent"
+        android:layout_marginTop="8dp"
+        android:layout_marginRight="8dp"
         app:layout_constraintRight_toRightOf="parent"
-        app:layout_constraintTop_toTopOf="parent" />
+        app:layout_constraintLeft_toRightOf="@+id/yes"
+        android:layout_marginLeft="8dp"
+        app:layout_constraintHorizontal_bias="1.0" />
 
     <Button
         android:id="@+id/ah"
         android:layout_width="120dp"
         android:layout_height="60dp"
-        android:layout_marginLeft="19dp"
-        android:layout_marginRight="8dp"
-        android:layout_marginTop="16dp"
         android:text="AHHHHH"
-        app:layout_constraintHorizontal_bias="0.1"
-        app:layout_constraintLeft_toRightOf="@+id/lobster"
+        android:layout_marginTop="8dp"
+        app:layout_constraintTop_toBottomOf="@+id/jazz"
+        android:layout_marginRight="8dp"
         app:layout_constraintRight_toRightOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/jazz" />
+        app:layout_constraintLeft_toRightOf="@+id/lobster"
+        android:layout_marginLeft="8dp"
+        app:layout_constraintHorizontal_bias="1.0" />
 
     <Button
         android:id="@+id/lobster"
         android:layout_width="120dp"
         android:layout_height="60dp"
-        android:layout_marginLeft="17dp"
-        android:layout_marginTop="16dp"
         android:text="Rock Lobster"
+        android:layout_marginTop="8dp"
+        app:layout_constraintTop_toBottomOf="@+id/yes"
         app:layout_constraintLeft_toRightOf="@+id/seal"
-        app:layout_constraintTop_toBottomOf="@+id/yes" />
+        android:layout_marginLeft="17dp" />
 
     <Button
         android:id="@+id/seal"
         android:layout_width="120dp"
         android:layout_height="60dp"
-        android:layout_marginLeft="8dp"
-        android:layout_marginTop="16dp"
         android:text="Sax Seal"
+        android:layout_marginLeft="8dp"
         app:layout_constraintLeft_toLeftOf="parent"
+        android:layout_marginTop="8dp"
         app:layout_constraintTop_toBottomOf="@+id/seinfeld" />
+
+    <Button
+        android:id="@+id/swamp"
+        android:layout_width="120dp"
+        android:layout_height="60dp"
+        android:layout_marginLeft="8dp"
+        android:layout_marginTop="8dp"
+        android:text="Get Out of My Swamp!"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/seal" />
+
+    <Button
+        android:id="@+id/all_star"
+        android:layout_width="120dp"
+        android:layout_height="60dp"
+        android:layout_marginLeft="17dp"
+        android:layout_marginTop="8dp"
+        android:text="All Star"
+        app:layout_constraintLeft_toRightOf="@+id/swamp"
+        app:layout_constraintTop_toBottomOf="@+id/lobster" />
+
+    <Button
+        android:id="@+id/sax_guy"
+        android:layout_width="120dp"
+        android:layout_height="60dp"
+        android:layout_marginLeft="19dp"
+        android:layout_marginRight="8dp"
+        android:layout_marginTop="8dp"
+        android:text="Epic Sax Guy"
+        app:layout_constraintLeft_toRightOf="@+id/all_star"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/ah" />
+
+    <Button
+        android:id="@+id/crawling"
+        android:layout_width="120dp"
+        android:layout_height="60dp"
+        android:layout_marginLeft="19dp"
+        android:layout_marginRight="8dp"
+        android:layout_marginTop="8dp"
+        android:text="Crawling in My Skin"
+        app:layout_constraintLeft_toRightOf="@+id/wake"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/sax_guy" />
+
+    <Button
+        android:id="@+id/wake"
+        android:layout_width="120dp"
+        android:layout_height="60dp"
+        android:layout_marginTop="8dp"
+        android:text="Wake Me Up Inside"
+        app:layout_constraintTop_toBottomOf="@+id/all_star"
+        tools:layout_editor_absoluteX="153dp" />
+
+    <Button
+        android:id="@+id/button7"
+        android:layout_width="120dp"
+        android:layout_height="60dp"
+        android:layout_marginLeft="8dp"
+        android:layout_marginTop="8dp"
+        android:text="Run"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/swamp" />
+
+    <Button
+        android:id="@+id/button8"
+        android:layout_width="95dp"
+        android:layout_height="56dp"
+        android:text="Button"
+        tools:layout_editor_absoluteX="16dp"
+        tools:layout_editor_absoluteY="293dp" />
 </android.support.constraint.ConstraintLayout>
