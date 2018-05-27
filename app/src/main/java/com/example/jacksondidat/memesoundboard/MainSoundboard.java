@@ -243,6 +243,63 @@ public class MainSoundboard extends AppCompatActivity {
             }
         });
 
+        final MediaPlayer mp12 = MediaPlayer.create(this, R.raw.suh_dude);
+
+        Button suh = (Button) findViewById(R.id.suh);
+        suh.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                System.out.println(mp12.isPlaying());
+                if (mp12.isPlaying()) {
+                    System.out.println("stop");
+                    mp12.pause();
+                    mp12.seekTo(0);
+                }
+                else {
+                    mp12.start();
+                    System.out.println("play");
+                }
+            }
+        });
+
+        final MediaPlayer mp13 = MediaPlayer.create(this, R.raw.last_resort);
+
+        Button lastResort = (Button) findViewById(R.id.cut);
+        lastResort.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                System.out.println(mp13.isPlaying());
+                if (mp13.isPlaying()) {
+                    System.out.println("stop");
+                    mp13.pause();
+                    mp13.seekTo(0);
+                }
+                else {
+                    mp13.start();
+                    System.out.println("play");
+                }
+            }
+        });
+
+        final MediaPlayer mp14 = MediaPlayer.create(this, R.raw.look_at_this_photograph);
+
+        Button photo = (Button) findViewById(R.id.photograph);
+        photo.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                System.out.println(mp14.isPlaying());
+                if (mp14.isPlaying()) {
+                    System.out.println("stop");
+                    mp14.pause();
+                    mp14.seekTo(0);
+                }
+                else {
+                    mp14.start();
+                    System.out.println("play");
+                }
+            }
+        });
+
     }
 }
 
