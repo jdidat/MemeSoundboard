@@ -300,20 +300,58 @@ public class MainSoundboard extends AppCompatActivity {
             }
         });
 
-        final MediaPlayer mp15 = MediaPlayer.create(this, R.raw.look_at_this_photograph);
+        final MediaPlayer mp15 = MediaPlayer.create(this, R.raw.thx);
 
-        Button thx = (Button) findViewById(R.id.photograph);
+        Button thx = (Button) findViewById(R.id.thx);
         thx.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                System.out.println(mp14.isPlaying());
-                if (mp14.isPlaying()) {
+                System.out.println(mp15.isPlaying());
+                if (mp15.isPlaying()) {
                     System.out.println("stop");
-                    mp14.pause();
-                    mp14.seekTo(0);
+                    mp15.pause();
+                    mp15.seekTo(0);
                 }
                 else {
-                    mp14.start();
+                    mp15.start();
+                    System.out.println("play");
+                }
+            }
+        });
+
+        final MediaPlayer mp16 = MediaPlayer.create(this, R.raw.hes_a_pirate);
+
+        Button pirate = (Button) findViewById(R.id.pirate);
+        pirate.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                System.out.println(mp16.isPlaying());
+                if (mp16.isPlaying()) {
+                    System.out.println("stop");
+                    mp16.pause();
+                    mp16.seekTo(0);
+                }
+                else {
+                    mp16.start();
+                    System.out.println("play");
+                }
+            }
+        });
+
+        final MediaPlayer mp17 = MediaPlayer.create(this, R.raw.dickness);
+
+        Button dickness = (Button) findViewById(R.id.dickness);
+        dickness.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                System.out.println(mp17.isPlaying());
+                if (mp17.isPlaying()) {
+                    System.out.println("stop");
+                    mp17.pause();
+                    mp17.seekTo(0);
+                }
+                else {
+                    mp17.start();
                     System.out.println("play");
                 }
             }
