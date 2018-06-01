@@ -300,6 +300,25 @@ public class MainSoundboard extends AppCompatActivity {
             }
         });
 
+        final MediaPlayer mp15 = MediaPlayer.create(this, R.raw.look_at_this_photograph);
+
+        Button thx = (Button) findViewById(R.id.photograph);
+        thx.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                System.out.println(mp14.isPlaying());
+                if (mp14.isPlaying()) {
+                    System.out.println("stop");
+                    mp14.pause();
+                    mp14.seekTo(0);
+                }
+                else {
+                    mp14.start();
+                    System.out.println("play");
+                }
+            }
+        });
+
     }
 }
 
